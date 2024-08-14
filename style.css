@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content {
+    flex: 1; /* Ensures content area takes up available space, pushing footer down */
+}
+
+.gallery {
+    gap: 10px; /* Space between cards */
+    padding: 10px;
+}
+
+.card {
+    display: flex; /* Ensures cards stay in a row */
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.divo1 {
+    background-color: #636366;
+    height: 166px;
+}
+
+.divo2 {
+    background-color: #636366 !important;
+}
+
+.hero-content {
+    padding-top: 20px;
+    align-items: center;
+}
+
+.hero {
+    background-image: url('./images/monkey-rides-motorcycle-cartoon-character/89bq_3hq1_210802.jpg');
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(145, 27, 27);
+}
+
+/* Footer Font Styles */
+.footer-font {
+    color: #fff !important;
+}
+
+.footer-font:hover {
+    color: rgb(89, 82, 82) !important;
+}
+
+/* Footer Container Style */
+.f1 {
+    background-color: #000 !important;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Footer Inner Content */
+.ff1 {
+    text-align: center;
+    background-color: #ada8a8 !important;
+}
+
+.ff1 h5 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.ff1 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Follow Us Section */
+.list-spacing {
+    margin-top: 10px;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 5px;
+}
+
+.list-unstyled li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.list-unstyled li a:hover {
+    color: #0b0b0b;
+}
+
+/* Copyright Section */
+.copyright1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+#map{
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;  
+    display: none;
+
+}
+#showMapButton {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border:10em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    align-content: center;
+}
+
+#showMapButton:hover {
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+
+.hero {
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
