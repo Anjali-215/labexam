@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<destinations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="destinations.xsd">
+    <destination>
+        <name>Paris</name>
+        <country>France</country>
+        <description>The city of lights.</description>
+    </destination>
+    <destination>
+    </destinations>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="destinations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="destination" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="country" type="xs:string"/>
+                            <xs:element name="description" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

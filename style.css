@@ -9,27 +9,32 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 5rem;
 }
 
 .content {
     flex: 1; /* Ensures content area takes up available space, pushing footer down */
 }
 
-.gallery {
-    gap: 10px; /* Space between cards */
-    padding: 10px;
-}
 
-.card {
-    display: flex; /* Ensures cards stay in a row */
-    transition: transform 0.2s ease;
-}
 
 .card:hover {
     transform: scale(1.05);
     color: brown;
 }
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); /* Adjust column size and number */
+    gap: 1rem; /* Space between cards */
+    padding: 1rem;
+}
+
+.card {
+    width: 100%; /* Make the card take full width of the grid cell */
+}
+
 
 .navbar {
     background-color: #fff;
@@ -65,26 +70,26 @@ body {
     color: rgb(145, 27, 27);
 }
 
-/* Footer Font Styles */
+
 .footer-font {
     color: #fff !important;
 }
 
 .footer-font:hover {
-    color: rgb(89, 82, 82) !important;
+    color: rgb(5, 5, 5) !important;
 }
 
-/* Footer Container Style */
+
 .f1 {
     background-color: #000 !important;
     color: #fff;
     padding: 20px 0;
 }
 
-/* Footer Inner Content */
+
 .ff1 {
     text-align: center;
-    background-color: #ada8a8 !important;
+    background-color: #9b6666 !important;
 }
 
 .ff1 h5 {
@@ -97,7 +102,7 @@ body {
     line-height: 1.6;
 }
 
-/* Follow Us Section */
+
 .list-spacing {
     margin-top: 10px;
 }
@@ -121,7 +126,7 @@ body {
     color: #0b0b0b;
 }
 
-/* Copyright Section */
+
 .copyright1 {
     margin-top: 20px;
     text-align: center;
@@ -143,8 +148,11 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+    align-self: center !important;
+    align-content: center !important;
     align-self: center;
-    align-content: center;
+  
+    
 }
 
 #showMapButton:hover {
@@ -153,14 +161,18 @@ body {
     border: 2px solid gray;
     border-radius: 8px;
 }
+.container1{
+    margin-top: 5rem;
+}
 
 
 .hero {
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your image URL */
+    background-image: url('./images/man-sysadmine-computer-programmer-working-computer/sysadmin_03.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
+    margin-top: 5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
